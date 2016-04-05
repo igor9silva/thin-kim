@@ -1,0 +1,11 @@
+﻿//using System;
+//
+//namespace ThinKim
+//{
+//	public static class Shared
+//	{
+//		public static float ScaleX { get; set; }
+//
+//		public static float ScaleY { get; set; }
+//	}
+//}

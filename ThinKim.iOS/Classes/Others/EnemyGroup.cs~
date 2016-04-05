@@ -1,0 +1,39 @@
+﻿// TODO document this file
+using System;
+using System.Collections.Generic;
+
+namespace ThinKim
+{
+	public static class EnemyGroup
+	{
+		private static readonly EnemyType[][] groups = new EnemyType[][]
+		{
+			new EnemyType[]
+			{ 
+				EnemyType.Idle, 
+				EnemyType.Jumping, 
+				EnemyType.Idle, 
+				EnemyType.Empty, 
+				EnemyType.Idle, 
+				EnemyType.Idle 
+			},
+			new EnemyType[]
+			{ 
+				EnemyType.Idle, 
+				EnemyType.Jumping, 
+				EnemyType.Idle, 
+				EnemyType.Empty 
+			}
+		};
+
+		public static EnemyType[] GetGroup(short i)
+		{
+			return groups[i];
+		}
+
+		public static int Count
+		{
+			get { return groups.Length; }
+		}
+	}
+}

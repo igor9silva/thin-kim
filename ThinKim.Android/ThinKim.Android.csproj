@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0089E8A0-EA87-40A4-B00C-158C7251E129}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ThinKim</RootNamespace>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>Thin Kim</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <AndroidApplication>True</AndroidApplication>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <AndroidLinkMode>Full</AndroidLinkMode>
+    <AndroidSupportedAbis>armeabi-v7a;x86</AndroidSupportedAbis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="OpenTK" />
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\..\..\..\Projects\Public GitHub\MonoGame\MonoGame.Framework\bin\Android\AnyCPU\Release\MonoGame.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="main.cs" />
+    <Compile Include="ThinKim.cs" />
+    <Compile Include="Classes\Behaviors\GravityBehavior.cs" />
+    <Compile Include="Classes\Behaviors\PullBehavior.cs" />
+    <Compile Include="Classes\Behaviors\Base\Behavior.cs" />
+    <Compile Include="Classes\Others\STPSpriteBatch.cs" />
+    <Compile Include="Classes\Others\SpriteAnimator.cs" />
+    <Compile Include="Classes\Others\SpriteAnimatorCollection.cs" />
+    <Compile Include="Classes\Sprites\Enemies.cs" />
+    <Compile Include="Classes\Sprites\Ground.cs" />
+    <Compile Include="Classes\Sprites\Kim.cs" />
+    <Compile Include="Classes\Sprites\Record.cs" />
+    <Compile Include="Classes\Sprites\Base\CenteredTextSprite.cs" />
+    <Compile Include="Classes\Sprites\Base\Sprite.cs" />
+    <Compile Include="Classes\Sprites\Base\SpriteCollection.cs" />
+    <Compile Include="Classes\Sprites\Base\TextSprite.cs" />
+    <Compile Include="Classes\Static\LeaderboardManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="..\..\Media\Compiled Android\Songs\background_music.mp3">
+      <Link>Content\Songs\background_music.mp3</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\SoundFX\kim_jump.xnb">
+      <Link>Content\SoundFX\kim_jump.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\SoundFX\kim_roll.xnb">
+      <Link>Content\SoundFX\kim_roll.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Enemy\Idle\1.xnb">
+      <Link>Content\Sprites\Enemy\Idle\1.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Enemy\Idle\2.xnb">
+      <Link>Content\Sprites\Enemy\Idle\2.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Enemy\Idle\3.xnb">
+      <Link>Content\Sprites\Enemy\Idle\3.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Enemy\Idle\4.xnb">
+      <Link>Content\Sprites\Enemy\Idle\4.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Enemy\Jumping\1.xnb">
+      <Link>Content\Sprites\Enemy\Jumping\1.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Enemy\Jumping\2.xnb">
+      <Link>Content\Sprites\Enemy\Jumping\2.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Enemy\Jumping\3.xnb">
+      <Link>Content\Sprites\Enemy\Jumping\3.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Enemy\Jumping\4.xnb">
+      <Link>Content\Sprites\Enemy\Jumping\4.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Enemy\Jumping\5.xnb">
+      <Link>Content\Sprites\Enemy\Jumping\5.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Kim\Rolling\1.xnb">
+      <Link>Content\Sprites\Kim\Rolling\1.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Kim\Rolling\2.xnb">
+      <Link>Content\Sprites\Kim\Rolling\2.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Kim\Rolling\3.xnb">
+      <Link>Content\Sprites\Kim\Rolling\3.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Kim\Rolling\4.xnb">
+      <Link>Content\Sprites\Kim\Rolling\4.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Kim\Rolling\5.xnb">
+      <Link>Content\Sprites\Kim\Rolling\5.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Kim\Running\1.xnb">
+      <Link>Content\Sprites\Kim\Running\1.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Kim\Running\2.xnb">
+      <Link>Content\Sprites\Kim\Running\2.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Kim\Running\3.xnb">
+      <Link>Content\Sprites\Kim\Running\3.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Kim\Running\4.xnb">
+      <Link>Content\Sprites\Kim\Running\4.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Kim\Running\5.xnb">
+      <Link>Content\Sprites\Kim\Running\5.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Kim\Running\6.xnb">
+      <Link>Content\Sprites\Kim\Running\6.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Scenario\background.xnb">
+      <Link>Content\Sprites\Scenario\background.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\Scenario\ground.xnb">
+      <Link>Content\Sprites\Scenario\ground.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\UI\game_over.xnb">
+      <Link>Content\Sprites\UI\game_over.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\UI\menu.xnb">
+      <Link>Content\Sprites\UI\menu.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\UI\no_rank.xnb">
+      <Link>Content\Sprites\UI\no_rank.xnb</Link>
+    </None>
+    <None Include="..\..\Media\Compiled Android\Sprites\UI\tutorial.xnb">
+      <Link>Content\Sprites\UI\tutorial.xnb</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="..\..\Media\Pure\Icons\Icon.png">
+      <Link>Resources\drawable\Icon.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\Media\Pure\Launch Image\Android.png">
+      <Link>Resources\drawable\Splash.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="Classes\Behaviors\" />
+    <Folder Include="Classes\Others\" />
+    <Folder Include="Classes\Sprites\" />
+    <Folder Include="Classes\Static\" />
+    <Folder Include="Content\" />
+    <Folder Include="Content\Fonts\" />
+    <Folder Include="Content\Sprites\" />
+    <Folder Include="Content\Songs\" />
+    <Folder Include="Content\SoundFX\" />
+    <Folder Include="Content\Sprites\Enemy\Idle\" />
+    <Folder Include="Content\Sprites\Enemy\Jumping\" />
+    <Folder Include="Content\Sprites\Kim\Rolling\" />
+    <Folder Include="Content\Sprites\Kim\Running\" />
+    <Folder Include="Content\Sprites\Scenario\" />
+    <Folder Include="Content\Sprites\UI\" />
+    <Folder Include="Resources\drawable\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <AndroidAsset Include="..\..\Media\Compiled Android\Fonts\miramonteB.xnb">
+      <Link>Content\Fonts\miramonteB.xnb</Link>
+    </AndroidAsset>
+  </ItemGroup>
+</Project>

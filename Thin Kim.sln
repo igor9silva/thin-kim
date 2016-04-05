@@ -1,0 +1,99 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinKim.iOS", "ThinKim.iOS\ThinKim.iOS.csproj", "{D2056000-3A93-4810-8562-302F848422E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinKim.Android", "ThinKim.Android\ThinKim.Android.csproj", "{0089E8A0-EA87-40A4-B00C-158C7251E129}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0089E8A0-EA87-40A4-B00C-158C7251E129}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{0089E8A0-EA87-40A4-B00C-158C7251E129}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{0089E8A0-EA87-40A4-B00C-158C7251E129}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{0089E8A0-EA87-40A4-B00C-158C7251E129}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{0089E8A0-EA87-40A4-B00C-158C7251E129}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{0089E8A0-EA87-40A4-B00C-158C7251E129}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{0089E8A0-EA87-40A4-B00C-158C7251E129}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{0089E8A0-EA87-40A4-B00C-158C7251E129}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{0089E8A0-EA87-40A4-B00C-158C7251E129}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{0089E8A0-EA87-40A4-B00C-158C7251E129}.Release|iPhone.Build.0 = Release|Any CPU
+		{0089E8A0-EA87-40A4-B00C-158C7251E129}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{0089E8A0-EA87-40A4-B00C-158C7251E129}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{D2056000-3A93-4810-8562-302F848422E8}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{D2056000-3A93-4810-8562-302F848422E8}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{D2056000-3A93-4810-8562-302F848422E8}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{D2056000-3A93-4810-8562-302F848422E8}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{D2056000-3A93-4810-8562-302F848422E8}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{D2056000-3A93-4810-8562-302F848422E8}.Debug|iPhone.Build.0 = Debug|iPhone
+		{D2056000-3A93-4810-8562-302F848422E8}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{D2056000-3A93-4810-8562-302F848422E8}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{D2056000-3A93-4810-8562-302F848422E8}.Release|iPhone.ActiveCfg = Release|iPhone
+		{D2056000-3A93-4810-8562-302F848422E8}.Release|iPhone.Build.0 = Release|iPhone
+		{D2056000-3A93-4810-8562-302F848422E8}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{D2056000-3A93-4810-8562-302F848422E8}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = ThinKim.Android\ThinKim.Android.csproj
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
+		$0.VersionControlPolicy = $2
+		$2.inheritsSet = Mono
+		$0.ChangeLogPolicy = $3
+		$3.UpdateMode = None
+		$3.MessageStyle = $4
+		$4.LineAlign = 0
+		$3.inheritsSet = Mono
+		$0.TextStylePolicy = $5
+		$5.FileWidth = 120
+		$5.TabsToSpaces = False
+		$5.inheritsSet = VisualStudio
+		$5.inheritsScope = text/plain
+		$5.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $6
+		$6.IndentSwitchBody = True
+		$6.EnumBraceStyle = DoNotChange
+		$6.MethodBraceStyle = DoNotChange
+		$6.AnonymousMethodBraceStyle = DoNotChange
+		$6.ConstructorBraceStyle = DoNotChange
+		$6.DestructorBraceStyle = DoNotChange
+		$6.PropertyBraceStyle = NextLine
+		$6.PropertyGetBraceStyle = NextLine
+		$6.PropertySetBraceStyle = NextLine
+		$6.EventBraceStyle = NextLine
+		$6.EventAddBraceStyle = NextLine
+		$6.EventRemoveBraceStyle = NextLine
+		$6.StatementBraceStyle = NextLine
+		$6.ElseNewLinePlacement = NewLine
+		$6.CatchNewLinePlacement = NewLine
+		$6.FinallyNewLinePlacement = NewLine
+		$6.WhileNewLinePlacement = DoNotCare
+		$6.ArrayInitializerWrapping = DoNotChange
+		$6.ArrayInitializerBraceStyle = NextLine
+		$6.BeforeMethodDeclarationParentheses = False
+		$6.BeforeMethodCallParentheses = False
+		$6.BeforeConstructorDeclarationParentheses = False
+		$6.BeforeDelegateDeclarationParentheses = False
+		$6.NewParentheses = False
+		$6.SpacesBeforeBrackets = False
+		$6.BlankLinesInsideRegion = 0
+		$6.MethodCallArgumentWrapping = WrapIfTooLong
+		$6.AlignToFirstMethodCallArgument = True
+		$6.MethodDeclarationParameterWrapping = WrapIfTooLong
+		$6.IndexerDeclarationParameterWrapping = WrapIfTooLong
+		$6.IndexerArgumentWrapping = WrapIfTooLong
+		$6.AlignToFirstIndexerArgument = True
+		$6.inheritsSet = Mono
+		$6.inheritsScope = text/x-csharp
+		$6.scope = text/x-csharp
+	EndGlobalSection
+EndGlobal

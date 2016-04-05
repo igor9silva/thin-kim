@@ -1,0 +1,14 @@
+﻿// TODO document this file
+using System;
+using Microsoft.Xna.Framework;
+
+namespace ThinKim
+{
+	public static class Scaler
+	{
+		public static Vector2 Scale(Vector2 pos, int height, float scale)
+		{
+			return new Vector2(pos.X * scale, pos.Y - ((height * scale) - height));
+		}
+	}
+}

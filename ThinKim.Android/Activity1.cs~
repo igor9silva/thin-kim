@@ -1,0 +1,38 @@
+﻿using System;
+using Android.App;
+using Android.Content;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+using Android.OS;
+using Microsoft.Xna.Framework;
+
+namespace ThinKim.Android
+{
+	[Activity(Label = "ThinKim.Android", 
+	          MainLauncher = true,
+	          Icon = "@drawable/icon",
+	          Theme = "@style/Theme.Splash",
+	          AlwaysRetainTaskState = true,
+	          LaunchMode = global::Android.Content.PM.LaunchMode.SingleInstance,
+	          ConfigurationChanges = global::Android.Content.PM.ConfigChanges.Orientation |
+	          global::Android.Content.PM.ConfigChanges.KeyboardHidden |
+	          global::Android.Content.PM.ConfigChanges.Keyboard)]
+	public class Activity1 : AndroidGameActivity
+	{
+		protected override void OnCreate(Bundle bundle)
+		{
+			base.OnCreate(bundle);
+
+			// Create our OpenGL view, and display it
+			Game1.Activity = this;
+			var g = new Game1();
+			SetContentView(g.Window);
+			g.Run();
+		}
+	}
+}
+43
+107
+L4
+434

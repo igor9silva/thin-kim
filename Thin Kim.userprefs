@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="ThinKim.Android/ThinKim.Android.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" PreferredExecutionTarget="Android.0424011441" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <AuthorInfo Name="Igor Silva" Email="igorsilva@sinky.com.br" Copyright="Igor Silva - 2014" Company="Sinky" Trademark="" />
+  <DisabledProjects>
+    <String>SaveThePandas.iOS/Thin Kim.iOS.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.ItemProperties.ThinKim.Android AndroidDeviceId-Release="0424011441" AndroidDeviceId-Debug="0424011441" />
+</Properties>

@@ -1,0 +1,32 @@
+﻿// TODO document this file
+using System;
+using MonoTouch.UIKit;
+using MonoTouch.Foundation;
+using MonoTouch.GameKit;
+
+namespace ThinKim
+{
+	public static class GameCenterManager
+	{
+		#region Properties
+		public static bool Authenticated
+		{
+			get { return GKLocalPlayer.LocalPlayer.Authenticated; }
+		}
+		#endregion
+
+		#region Methods
+		public static void Authenticate(Action<UIViewController, NSError> handler)
+		{
+			GKLocalPlayer.LocalPlayer.AuthenticateHandler = handler;
+		}
+
+		public static void PostRecord(string leaderboardID, long longScore, Action<NSError> callback)
+		{
+			GKScore score = new GKScore(leaderboardID);
+			score.Value = longScore;
+			GKScore.ReportScores(new GKScore[] { score }, callback);
+		}
+		#endregion
+	}
+}

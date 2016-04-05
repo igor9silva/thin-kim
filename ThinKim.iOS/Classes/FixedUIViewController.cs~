@@ -1,0 +1,20 @@
+﻿using System;
+using MonoTouch.UIKit;
+
+namespace ThinKim
+{
+	public class FixedUIViewController : UIViewController
+	{
+		public override void DismissViewController(bool animated, MonoTouch.Foundation.NSAction completionHandler)
+		{
+			Console.WriteLine("DismissViewController");
+			base.DismissViewController(animated, completionHandler);
+		}
+
+		public override System.Threading.Tasks.Task DismissViewControllerAsync(bool animated)
+		{
+			Console.WriteLine("DismissViewControllerAsync");
+			return base.DismissViewControllerAsync(animated);
+		}
+	}
+}

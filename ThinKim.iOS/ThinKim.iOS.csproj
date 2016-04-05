@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D2056000-3A93-4810-8562-302F848422E8}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ThinKim</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+    <AssemblyName>ThinKim</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <AssemblyName>ThinKim</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7, ARMv7s</MtouchArch>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchLink>Full</MtouchLink>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <AssemblyName>ThinKimiOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7, ARMv7s</MtouchArch>
+    <MtouchLink>Full</MtouchLink>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <AssemblyName>ThinKimiOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7, ARMv7s</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchLink>Full</MtouchLink>
+    <AssemblyName>ThinKimiOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7, ARMv7s</MtouchArch>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>Full</MtouchLink>
+    <AssemblyName>ThinKimiOS</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\..\..\..\Projects\Public GitHub\MonoGame\MonoGame.Framework\bin\iOS\iPhone\Release\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\OpenTK.dll</HintPath>
+      <SpecificVersion>true</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\Sprites\Ground.cs" />
+    <Compile Include="Classes\Sprites\Kim.cs" />
+    <Compile Include="Classes\Sprites\Base\Sprite.cs" />
+    <Compile Include="Classes\Sprites\Base\SpriteCollection.cs" />
+    <Compile Include="Classes\Sprites\Enemies.cs" />
+    <Compile Include="Classes\Behaviors\Base\Behavior.cs" />
+    <Compile Include="Classes\Behaviors\GravityBehavior.cs" />
+    <Compile Include="Classes\Behaviors\PullBehavior.cs" />
+    <Compile Include="Classes\Others\SpriteAnimatorCollection.cs" />
+    <Compile Include="Classes\Others\SpriteAnimator.cs" />
+    <Compile Include="Classes\Others\STPSpriteBatch.cs" />
+    <Compile Include="Classes\Sprites\Base\TextSprite.cs" />
+    <Compile Include="Classes\Sprites\Base\CenteredTextSprite.cs" />
+    <Compile Include="Classes\Sprites\Record.cs" />
+    <Compile Include="Classes\Static\LeaderboardManager.cs" />
+    <Compile Include="main.cs" />
+    <Compile Include="ThinKim.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="Classes\Sprites\" />
+    <Folder Include="Classes\Sprites\Base\" />
+    <Folder Include="Classes\Behaviors\" />
+    <Folder Include="Classes\Behaviors\Base\" />
+    <Folder Include="Classes\Others\" />
+    <Folder Include="Classes\Static\" />
+    <Folder Include="Content\Fonts\" />
+    <Folder Include="Content\Songs\" />
+    <Folder Include="Content\SoundFX\" />
+    <Folder Include="Content\Sprites\" />
+    <Folder Include="Content\Sprites\Enemy\" />
+    <Folder Include="Content\Sprites\Kim\" />
+    <Folder Include="Content\Sprites\Scenario\" />
+    <Folder Include="Content\Sprites\Enemy\Idle\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\Media\Compiled iOS\Fonts\miramonteB.xnb">
+      <Link>Content\Fonts\miramonteB.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Songs\background_music.mp3">
+      <Link>Content\Songs\background_music.mp3</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\SoundFX\kim_jump.wav">
+      <Link>Content\SoundFX\kim_jump.wav</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\SoundFX\kim_roll.wav">
+      <Link>Content\SoundFX\kim_roll.wav</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Enemy\Idle\1.xnb">
+      <Link>Content\Sprites\Enemy\Idle\1.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Enemy\Idle\2.xnb">
+      <Link>Content\Sprites\Enemy\Idle\2.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Enemy\Idle\3.xnb">
+      <Link>Content\Sprites\Enemy\Idle\3.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Enemy\Idle\4.xnb">
+      <Link>Content\Sprites\Enemy\Idle\4.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Enemy\Jumping\1.xnb">
+      <Link>Content\Sprites\Enemy\Jumping\1.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Enemy\Jumping\2.xnb">
+      <Link>Content\Sprites\Enemy\Jumping\2.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Enemy\Jumping\3.xnb">
+      <Link>Content\Sprites\Enemy\Jumping\3.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Enemy\Jumping\4.xnb">
+      <Link>Content\Sprites\Enemy\Jumping\4.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Enemy\Jumping\5.xnb">
+      <Link>Content\Sprites\Enemy\Jumping\5.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Kim\Rolling\1.xnb">
+      <Link>Content\Sprites\Kim\Rolling\1.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Kim\Rolling\2.xnb">
+      <Link>Content\Sprites\Kim\Rolling\2.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Kim\Rolling\3.xnb">
+      <Link>Content\Sprites\Kim\Rolling\3.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Kim\Rolling\4.xnb">
+      <Link>Content\Sprites\Kim\Rolling\4.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Kim\Rolling\5.xnb">
+      <Link>Content\Sprites\Kim\Rolling\5.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Kim\Running\1.xnb">
+      <Link>Content\Sprites\Kim\Running\1.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Kim\Running\2.xnb">
+      <Link>Content\Sprites\Kim\Running\2.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Kim\Running\3.xnb">
+      <Link>Content\Sprites\Kim\Running\3.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Kim\Running\4.xnb">
+      <Link>Content\Sprites\Kim\Running\4.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Kim\Running\5.xnb">
+      <Link>Content\Sprites\Kim\Running\5.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Kim\Running\6.xnb">
+      <Link>Content\Sprites\Kim\Running\6.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Scenario\background.xnb">
+      <Link>Content\Sprites\Scenario\background.xnb</Link>
+    </Content>
+    <Content Include="..\..\Media\Compiled iOS\Sprites\Scenario\ground.xnb">
+      <Link>Content\Sprites\Scenario\ground.xnb</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\Default-Landscape.png" />
+    <BundleResource Include="Resources\Default-Landscape%402x.png" />
+    <BundleResource Include="Resources\Icon.png" />
+    <BundleResource Include="Resources\Icon%402x.png" />
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+    <BundleResource Include="Resources\Icon-72.png" />
+    <BundleResource Include="Resources\Icon-72%402x.png" />
+    <BundleResource Include="Resources\Icon-76.png" />
+    <BundleResource Include="Resources\Icon-76%402x.png" />
+    <BundleResource Include="Resources\Icon-Small.png" />
+    <BundleResource Include="Resources\Icon-Small%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-50.png" />
+    <BundleResource Include="Resources\Icon-Small-50%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-40.png" />
+    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
+    <BundleResource Include="..\..\Media\Compiled iOS\Sprites\UI\game_over.png">
+      <Link>Content\Sprites\UI\game_over.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Media\Compiled iOS\Sprites\UI\menu.png">
+      <Link>Content\Sprites\UI\menu.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Media\Compiled iOS\Sprites\UI\tutorial.png">
+      <Link>Content\Sprites\UI\tutorial.png</Link>
+    </BundleResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+</Project>

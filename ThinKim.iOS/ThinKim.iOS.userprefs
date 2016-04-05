@@ -1,0 +1,12 @@
+﻿<Properties StartupItem="ThinKim.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.Igor's iPhone" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Classes/Sprites/Ground.cs">
+    <Files>
+      <File FileName="Classes/Sprites/Ground.cs" Line="4" Column="17" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

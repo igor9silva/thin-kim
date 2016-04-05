@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0.1" package="com.sinky.thin-kim" android:installLocation="auto" android:versionCode="2">
+	<uses-sdk />
+	<application android:label="Thin Kim" android:icon="@drawable/icon">
+	</application>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-feature android:glEsVersion="0x00020000" android:required="true" />
+</manifest>
